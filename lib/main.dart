@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/screens/home_page.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+
+void main() async {
+  //initialize widget bindings
+  WidgetsFlutterBinding.ensureInitialized();
+  //Initilaze Firebase with the platform
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
   runApp(const MyApp());
 }
 
