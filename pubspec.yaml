@@ -1,30 +1,34 @@
 name: myapp
 description: "A new Flutter project."
-publish_to: "none"
+publish_to: "none" # It preventing to the package from being published to pub.dev
+
 version: 0.1.0
 
 environment:
-  sdk: ^3.8.1
+  sdk: ^3.8.1 # Make sure your local Dart SDK should be matching this version
+
 
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^4.0.0
-  cloud_firestore: ^6.0.0
-  provider: ^6.1.5+1
-  table_calendar: ^3.2.0
+  firebase_core: ^4.0.0 # It is a Core Firebase functionality
+  cloud_firestore: ^6.0.0 # This is Firestore database integration
+
+  provider: ^6.1.5+1  # This is State management
+  table_calendar: ^3.2.0 # Calendar UI widget
 
 dev_dependencies:
   flutter_test:
-    sdk: flutter
-  flutter_lints: ^5.0.0
+    sdk: flutter # It's For writing and running test unit
+  flutter_lints: ^5.0.0 # For Flutter projects lint is recommended
 
 flutter:
   uses-material-design: true
   assets:
-    - assests/
+    - assests/ # Typo: should be "assets/" instead of "assests/"
+
 
 fonts:
   - family: Caveat
     fonts:
-      - asset: fonts/Caveat-Regular.ttfP
+      - asset: fonts/Caveat-Regular.ttfP # Type: removing the trailing "P"
